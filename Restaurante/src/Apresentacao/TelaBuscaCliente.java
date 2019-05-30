@@ -8,43 +8,57 @@ public class TelaBuscaCliente extends JFrame {
     JTable table;
     JScrollPane tableScrollPane;
 
-
-    Object [][] dados = {
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
-            {"João da Silva", "48 8890-3345", "joaosilva@hotmail.com"},
-            {"Pedro Cascaes", "48 9870-5634", "pedrinho@gmail.com"}
-    };
-
-    String [] colunas = {"Nome", "Telefone", "Email"};
-
-
     public TelaBuscaCliente(){
+        setTitle("Exemplo de JTable");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(600,460);
+        this.setResizable(false);
+        setup();
+    }
 
-        super ("Contatos");
 
-        table = new JTable(dados, colunas);
-        tableScrollPane = new JScrollPane(table);
 
-        table.setSize(800,600);
+    private void setup(){
+        Object [][] dados = {
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"Ana Monteiro", "48 9923-7898", "ana.monteiro@gmail.com"},
+                {"João da Silva", "48 8890-3345", "joaosilva@hotmail.com"},
+                {"Pedro Cascaes", "48 9870-5634", "pedrinho@gmail.com"}
+        };
 
-        JPanel tablePanel = new JPanel(new GridLayout());
-        tablePanel.add(tableScrollPane);
-        this.add(tablePanel);
+        String [] colunas = {"Nome", "Telefone", "Email"};
+
+
+
+        JPanel painel = new JPanel();
+
+        JTable table = new JTable(dados, colunas);
+
+        // Inserindo tabela dentro da barra de rolagem
+        JScrollPane barraRolagem = new JScrollPane(table);
+
+
+        // Adicionando barra de rolagem no panel
+        painel.add(barraRolagem);
+
+        // Adicionado no JFrame
+        add(painel);
+        setVisible(true);
+
 
 
         setTitle("Busca");

@@ -1,7 +1,8 @@
 package Apresentacao;
 
 import Modelo.Funcionario;
-import Persistencia.DMGeral;
+import Modelo.Imagem;
+import Persistencia.DMLogin;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,6 +16,7 @@ public class Login extends JFrame{
     private JLabel lLogin, lPassword, lIcone;
     private JButton bEnter;
     String login,password;
+    Imagem imagem;
 
     public Login(){
 
@@ -44,14 +46,14 @@ public class Login extends JFrame{
         tPassword.setLocation(240,95);
         this.add(tPassword);
 
-
-        ImageIcon iconeImage = new ImageIcon("../Restaurante/src/Imagens/icone_login_60.png");
+        imagem = new Imagem();
+        ImageIcon iconeImage = new ImageIcon(imagem.montarCaminho("icone_login_60.png"));
         lIcone = new JLabel();
         lIcone.setSize(156,156);
         lIcone.setLocation(5,10);
         lIcone.setIcon(iconeImage);
         lIcone.setHorizontalAlignment(SwingConstants.CENTER);
-        this.add (lIcone);
+        this.add(lIcone);
 
         bEnter = new JButton("Entrar");
         bEnter.setSize(100,20);
@@ -78,7 +80,7 @@ public class Login extends JFrame{
             password = tPassword.getText();
             Funcionario func = new Funcionario("",login,password);
             try {
-                int k = new DMGeral().realizarLogin(func);
+                int k = new DMLogin().realizarLogin(func);
                 if( k == 0 ){
                     dispose();
                 }

@@ -1,9 +1,12 @@
 package Apresentacao;
 
-import jdk.nashorn.internal.scripts.JO;
+import Modelo.Cliente;
+import Persistencia.DMCliente;
+import Persistencia.DMGeral;
 
 import javax.swing.*;
 import java.awt.*;
+import java.sql.SQLException;
 
 public class JanelaPrincipal extends JFrame {
 
@@ -12,10 +15,8 @@ public class JanelaPrincipal extends JFrame {
 
     public JanelaPrincipal(){
 
-
         ImageIcon wallpaperimage = new ImageIcon("../Restaurante/src/Imagens/wallpaper.jpg");
         lWallpaper = new JLabel();
-        lWallpaper.setSize(800,400);
         lWallpaper.setLocation(50,50);
         lWallpaper.setIcon(wallpaperimage);
         lWallpaper.setHorizontalAlignment(SwingConstants.CENTER);
@@ -36,7 +37,11 @@ public class JanelaPrincipal extends JFrame {
     }
 
     public void buscarCliente(){
-        JOptionPane.showMessageDialog(null,"CADASTRAR");
+
+        String nome = JOptionPane.showInputDialog("Digite o nome do cliente desejado");
+        String cpf = JOptionPane.showInputDialog("Digite o cpf do cliente desejado");
+        Cliente cl = new Cliente(nome,cpf,0,0);
+        new DMCliente().consultar(cl);
     }
 
     public void cadastrarCliente(){

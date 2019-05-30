@@ -1,34 +1,43 @@
 package Apresentacao;
 
 import Modelo.*;
+import Persistencia.DMCliente;
+import Persistencia.DMEndereco;
 import Persistencia.DMGeral;
+import Persistencia.DMTelefone;
 
 import java.awt.*;
 import java.awt.event.*;
 import java.sql.SQLException;
 import javax.swing.*;
 
+
 @SuppressWarnings("serial")
 public class TelaCliente extends JFrame {
 
-    private JLabel lDados, lEndereco, lContato, lNome, lCpf, lRua, lNumero, lComplemento, lBairro, lCidade, lCep, lEstado, lDdd, lTel, lOperadora;
+
+    private JLabel lDados, lEndereco, lContato, lNome, lCpf, lRua, lNumero, lComplemento, lBairro, lCidade, lCep, lEstado, lDdd, lTel, lOperadora, lBLimpar, lBSalvar, lCliente, lAdress, lIconeContato;
     private JTextField tNome, tCpf, tRua, tNumero, tComplemento, tBairro, tCidade, tCep, tEstado, tDdd, tTel, tOperadora;
     private JButton bSalvar, bLimpar;
-
-    //vari�veis locais para armazenar o que for digitado
+    //variaveis locais para armazenar o que for digitado
     String cpf, nome, rua, numero, complemento, bairro, cidade, cep, estado, ddd, tel, operadora;
 
-
-    Cliente cliente;
-    Endereco endereco;
-    Telefone telefone;
 
     public TelaCliente() {
 
 
-        lDados = new JLabel(">>>>> DADOS PESSOAIS <<<<<");
+        Imagem cliente = new Imagem();
+        ImageIcon iconCliente = new ImageIcon(cliente.montarCaminho("cliente_icon.png"));
+        lCliente = new JLabel();
+        lCliente.setSize(50, 50);
+        lCliente.setLocation(15, 10);
+        lCliente.setIcon(iconCliente);
+        this.add(lCliente);
+
+        lDados = new JLabel("");
+        lDados.setText("<html><u>DADOS PESSOAIS</u>");
         lDados.setSize(250, 30);
-        lDados.setLocation(20, 20);
+        lDados.setLocation(70, 35);
         this.add(lDados);
 
         lCpf = new JLabel("CPF:");
@@ -51,10 +60,22 @@ public class TelaCliente extends JFrame {
         tNome.setLocation(320, 65);
         this.add(tNome);
 
-        lEndereco = new JLabel(">>>>>>> ENDEREÇO <<<<<<<");
+
+        Imagem endereco = new Imagem();
+        ImageIcon iconEndereco = new ImageIcon(endereco.montarCaminho("adress_icon.png"));
+        lAdress = new JLabel();
+        lAdress.setSize(50, 50);
+        lAdress.setLocation(15, 100);
+        lAdress.setIcon(iconEndereco);
+        this.add(lAdress);
+
+
+        lEndereco = new JLabel();
+        lEndereco.setText("<html><u>ENDEREÇO</u>");
         lEndereco.setSize(250, 30);
-        lEndereco.setLocation(20, 110);
+        lEndereco.setLocation(70, 115);
         this.add(lEndereco);
+
 
         //endere�o
         lRua = new JLabel("Logradouro:");
@@ -128,9 +149,19 @@ public class TelaCliente extends JFrame {
         this.add(tEstado);
 
 
-        lContato = new JLabel(">>>>>>> CONTATO <<<<<<<");
+        Imagem contato = new Imagem();
+        ImageIcon iconContato = new ImageIcon(contato.montarCaminho("contat_icon.png"));
+        lIconeContato = new JLabel();
+        lIconeContato.setSize(50, 50);
+        lIconeContato.setLocation(15, 260);
+        lIconeContato.setIcon(iconContato);
+        this.add(lIconeContato);
+
+
+        lContato = new JLabel();
+        lContato.setText("<html><u>CONTATO</u>");
         lContato.setSize(250, 30);
-        lContato.setLocation(20, 265);
+        lContato.setLocation(70, 280);
         this.add(lContato);
 
         lDdd = new JLabel("DDD:");
@@ -167,10 +198,6 @@ public class TelaCliente extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 if (e.getSource() == bSalvar) {
 
-                    cpf = tCpf.getText();
-                    nome = tNome.getText();
-                    Cliente c = new Cliente(nome, cpf,0,0);
-
                     rua = tRua.getText();
                     numero = tNumero.getText();
                     complemento = tComplemento.getText();
@@ -181,16 +208,38 @@ public class TelaCliente extends JFrame {
 
                     Endereco end = new Endereco(rua, numero, complemento, bairro, cep, cidade, estado);
 
+                    int idEndereco = 0;
+                    try {
+                        idEndereco = new DMEndereco().incluirEndereco(end);
+                    } catch (SQLException ex) {
+                        ex.printStackTrace();
+                    }
+
+
                     ddd = tDdd.getText();
                     tel = tTel.getText();
                     operadora = tOperadora.getText();
 
                     Telefone telefone = new Telefone(ddd, tel, operadora);
+
+                    int idTelefone = 0;
                     try {
-                        new DMGeral().cadastrarCliente(c, end, telefone);
-                    } catch (SQLException e1) {
-                        e1.printStackTrace();
+                        idTelefone = new DMTelefone().inserirTelefone(telefone);
+                    } catch (SQLException ex) {
+                        ex.printStackTrace();
                     }
+
+
+                    cpf = tCpf.getText();
+                    nome = tNome.getText();
+                    Cliente c = new Cliente(nome, cpf, idTelefone, idEndereco);
+
+                    try {
+                        new DMCliente().inserirCliente(c, idTelefone, idEndereco);
+                    } catch (SQLException ex) {
+                        ex.printStackTrace();
+                    }
+
 
                 }
 
@@ -215,34 +264,45 @@ public class TelaCliente extends JFrame {
 
         }
 
-
         OuvinteCliente oC = new OuvinteCliente();
 
-        bSalvar = new JButton("Salvar");
-        bSalvar.setSize(150, 50);
+        Imagem save = new Imagem();
+        ImageIcon iconSalvar = new ImageIcon(save.montarCaminho("save_icon.png"));
+        bSalvar = new JButton(iconSalvar);
+        bSalvar.setSize(55, 55);
         bSalvar.setLocation(150, 350);
         bSalvar.setForeground(Color.white);
-        bSalvar.setBackground(Color.green);
         bSalvar.addMouseListener(oC);
         this.add(bSalvar);
 
-        bLimpar = new JButton("Limpar");
-        bLimpar.setSize(150, 50);
+        lBSalvar = new JLabel("Salvar");
+        lBSalvar.setSize(250, 30);
+        lBSalvar.setLocation(155, 400);
+        this.add(lBSalvar);
+
+
+        Imagem trash = new Imagem();
+        ImageIcon iconTrash = new ImageIcon(trash.montarCaminho("trash_icon.png"));
+        bLimpar = new JButton(iconTrash);
+        bLimpar.setSize(55, 55);
         bLimpar.setLocation(500, 350);
         bLimpar.setForeground(Color.white);
-        bLimpar.setBackground(Color.blue);
         bLimpar.addMouseListener(oC);
         this.add(bLimpar);
 
-        this.setSize(800, 450);
+        lBLimpar = new JLabel("Limpar");
+        lBLimpar.setSize(250, 30);
+        lBLimpar.setLocation(505, 400);
+        this.add(lBLimpar);
+
+
+        this.setSize(800, 470);
         this.setTitle("Cliente");
-        this.getContentPane().setBackground(Color.LIGHT_GRAY);
+        this.getContentPane().setBackground(new Color(177, 148, 227));
         this.setResizable(false);
         this.setLayout(null);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
-
-
-
     }
+
 }
