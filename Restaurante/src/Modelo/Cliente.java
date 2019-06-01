@@ -1,5 +1,7 @@
 package Modelo;
 
+import java.awt.*;
+
 public class Cliente {
 
     public String nome,cpf;

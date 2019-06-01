@@ -11,13 +11,13 @@ import java.sql.SQLException;
 
 public class DMLogin extends DMGeral {
 
-    public int realizarLogin(Funcionario obj) throws SQLException {
+    public int realizarLogin(Funcionario f) throws SQLException {
         int k = 0;
         Connection con = DMGeral.getConnection();
 
         String sql = "SELECT * FROM funcionario WHERE login like ?";
         PreparedStatement stmt = con.prepareStatement(sql);
-        stmt.setString(1, obj.login);
+        stmt.setString(1, f.login);
 
         ResultSet rs = stmt.executeQuery();
 
@@ -26,7 +26,7 @@ public class DMLogin extends DMGeral {
             String login = rs.getString("login");
             String password = rs.getString("senha");
 
-            if (login.equals(obj.login) && password.equals(obj.password)) {
+            if (login.equals(f.login) && password.equals(f.password)) {
                 new JanelaPrincipal();
             } else {
                 JOptionPane.showMessageDialog(null, "Login ou senha incorretos.");

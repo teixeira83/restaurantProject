@@ -33,19 +33,12 @@ public abstract class DMGeral {
 //        inserirCliente(c, idEndereco, idTelefone);
 //    }
 
+    public int getReturnLength(ResultSet r) throws SQLException {
+        int cont = 0;
+        while(r.next()){
+            cont ++;
+        }
 
-    private int inserirTelefone(Telefone t) throws SQLException {
-
-
-        return 0;
+        return cont;
     }
-
-    private void inserirCliente(Cliente c, Integer idEndereco, Integer idTelefone) throws SQLException {
-
-
-    }
-
-
-
-
 }

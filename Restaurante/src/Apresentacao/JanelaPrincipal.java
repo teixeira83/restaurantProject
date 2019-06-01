@@ -1,6 +1,7 @@
 package Apresentacao;
 
 import Modelo.Cliente;
+import Modelo.Imagem;
 import Persistencia.DMCliente;
 import Persistencia.DMGeral;
 
@@ -15,7 +16,8 @@ public class JanelaPrincipal extends JFrame {
 
     public JanelaPrincipal(){
 
-        ImageIcon wallpaperimage = new ImageIcon("../Restaurante/src/Imagens/wallpaper.jpg");
+        Imagem wallpapper = new Imagem();
+        ImageIcon wallpaperimage = new ImageIcon(wallpapper.montarCaminho("wallpaper.jpg"));
         lWallpaper = new JLabel();
         lWallpaper.setLocation(50,50);
         lWallpaper.setIcon(wallpaperimage);
@@ -36,12 +38,17 @@ public class JanelaPrincipal extends JFrame {
 
     }
 
-    public void buscarCliente(){
+    public void buscarCliente() throws SQLException {
 
         String nome = JOptionPane.showInputDialog("Digite o nome do cliente desejado");
         String cpf = JOptionPane.showInputDialog("Digite o cpf do cliente desejado");
         Cliente cl = new Cliente(nome,cpf,0,0);
-        new DMCliente().consultar(cl);
+        Cliente[] clientes;
+        clientes = (Cliente[]) new DMCliente().consultar(cl);
+        System.out.println(clientes.length);
+        for(int i = 0; i < clientes.length; i++) {
+            System.out.println(clientes[i].nome);
+        }
     }
 
     public void cadastrarCliente(){
