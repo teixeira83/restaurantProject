@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 public class DMCliente extends DMGeral {
 
-    public void inserirCliente(Cliente c, int idTelefone, int idEndereco) throws SQLException {
+    public void inserirCliente(Cliente c) throws SQLException {
 
 
         Connection con = DMGeral.getConnection();
@@ -19,13 +19,13 @@ public class DMCliente extends DMGeral {
         PreparedStatement stmt = con.prepareStatement(sql);
         stmt.setString(1, c.cpf);
         stmt.setString(2, c.nome);
-        stmt.setInt(3, idEndereco);
-        stmt.setInt(4, idTelefone);
+        stmt.setInt(3, c.idEndereco);
+        stmt.setInt(4, c.idTelefone);
         stmt.execute();
         stmt.close();
     }
 
-    public Object consultar(Cliente c) throws SQLException {
+    public Cliente[] consultar(Cliente c) throws SQLException {
         Connection con = DMGeral.getConnection();
 
         String sql = "SELECT * FROM cliente WHERE nome like ?";

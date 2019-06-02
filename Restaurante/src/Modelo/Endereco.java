@@ -3,8 +3,9 @@ package Modelo;
 public class Endereco {
 
     public String logradouro, num, complemento,bairro,cep,cidade,estado;
-    public Endereco(String logradouro,String num,String complemento,String bairro,String cep,String cidade,String estado){
-
+    public int id_endereco;
+    public Endereco(int id_endereco, String logradouro,String num,String complemento,String bairro,String cep,String cidade,String estado){
+        this.id_endereco = id_endereco;
         this.logradouro = logradouro;
         this.num = num;
         this.complemento = complemento;

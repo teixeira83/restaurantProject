@@ -1,9 +1,13 @@
 package Apresentacao;
 
 import Modelo.Cliente;
+import Modelo.Endereco;
 import Modelo.Imagem;
+import Modelo.Telefone;
 import Persistencia.DMCliente;
+import Persistencia.DMEndereco;
 import Persistencia.DMGeral;
+import Persistencia.DMTelefone;
 
 import javax.swing.*;
 import java.awt.*;
@@ -44,10 +48,18 @@ public class JanelaPrincipal extends JFrame {
         String cpf = JOptionPane.showInputDialog("Digite o cpf do cliente desejado");
         Cliente cl = new Cliente(nome,cpf,0,0);
         Cliente[] clientes;
-        clientes = (Cliente[]) new DMCliente().consultar(cl);
-        System.out.println(clientes.length);
+        clientes =  new DMCliente().consultar(cl);
+
+        Telefone[] telefones = new Telefone[clientes.length];
+        Endereco[] enderecos = new Endereco[clientes.length];
+
         for(int i = 0; i < clientes.length; i++) {
-            System.out.println(clientes[i].nome);
+            telefones[i]  = new DMTelefone().consultarTelefone(clientes[i].idTelefone);
+            enderecos[i] = new DMEndereco().consutlarEndereco(clientes[i].idEndereco);
+            System.out.println("Cliente nome " + clientes[i].nome + "\n cliente id_tel: " + clientes[i].idTelefone + "\n cliente id_end: " + clientes[i].idEndereco);
+            System.out.println("Telefone id_telefone " + telefones[i].id_telefone + "\n numero: " + telefones[i].num);
+            System.out.println("Endereço id_endereço " + enderecos[i].id_endereco + "\n rua: " + enderecos[i].num);
+
         }
     }
 

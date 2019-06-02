@@ -25,4 +25,21 @@ public class DMTelefone extends DMGeral {
         stmt.close();
         return idTelefone;
     }
+
+    public Telefone consultarTelefone(int t) throws SQLException {
+        Connection con =  DMGeral.getConnection();
+
+        String sql = "SELECT * FROM telefone WHERE id_telefone = ?";
+        PreparedStatement stmt = con.prepareStatement(sql);
+        stmt.setInt(1, t);
+        ResultSet r = stmt.executeQuery();
+        Telefone tel = new Telefone(0,"","","");
+        if( r.next() == true ){
+                tel .id_telefone = r.getInt("id_telefone");
+                tel.ddd = r.getString("ddd");
+                tel.num = r.getString("numero");
+                tel.operadora = r.getString("operadora");
+        }
+        return tel;
+    }
 }

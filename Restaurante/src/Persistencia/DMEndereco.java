@@ -2,6 +2,7 @@ package Persistencia;
 
 import Modelo.Endereco;
 import Modelo.Funcionario;
+import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
 
 import java.sql.*;
 
@@ -30,6 +31,29 @@ public class DMEndereco extends DMGeral{
         }
         stmt.close();
         return idEndereco;
+    }
+
+
+    public Endereco consutlarEndereco(int e) throws SQLException {
+        Connection con = DMGeral.getConnection();
+        String sql = "SELECT * FROM endereco WHERE id_endereco like ?";
+        PreparedStatement stmt = con.prepareStatement(sql);
+        stmt.setInt(1, e);
+        ResultSet r = stmt.executeQuery();
+
+        Endereco end = new Endereco(0,"", "", "", "", "", "", "");
+        if (r.next() == true){
+
+            end.id_endereco = r.getInt("id_endereco");
+            end.logradouro = r.getString("rua");
+            end.cep = r.getString("cep");
+            end.num = r.getString("numero");
+            end.complemento = r.getString("complemento");
+            end.bairro = r.getString("bairro");
+            end.cidade = r.getString("cidade");
+            end.estado = r.getString("estado");
+        }
+        return end;
     }
 
 }

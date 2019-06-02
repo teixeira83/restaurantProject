@@ -206,7 +206,7 @@ public class TelaCliente extends JFrame {
                     cidade = tCidade.getText();
                     estado = tEstado.getText();
 
-                    Endereco end = new Endereco(rua, numero, complemento, bairro, cep, cidade, estado);
+                    Endereco end = new Endereco(0,rua, numero, complemento, bairro, cep, cidade, estado);
 
                     int idEndereco = 0;
                     try {
@@ -215,31 +215,29 @@ public class TelaCliente extends JFrame {
                         ex.printStackTrace();
                     }
 
-
                     ddd = tDdd.getText();
                     tel = tTel.getText();
                     operadora = tOperadora.getText();
 
-                    Telefone telefone = new Telefone(ddd, tel, operadora);
+                    Telefone telefone = new Telefone(0, ddd, tel, operadora);
 
-                    int idTelefone = 0;
+                    int idTelefone = 0 ;
+
                     try {
                         idTelefone = new DMTelefone().inserirTelefone(telefone);
                     } catch (SQLException ex) {
                         ex.printStackTrace();
                     }
 
-
                     cpf = tCpf.getText();
                     nome = tNome.getText();
                     Cliente c = new Cliente(nome, cpf, idTelefone, idEndereco);
 
                     try {
-                        new DMCliente().inserirCliente(c, idTelefone, idEndereco);
+                        new DMCliente().inserirCliente(c);
                     } catch (SQLException ex) {
                         ex.printStackTrace();
                     }
-
 
                 }
 
