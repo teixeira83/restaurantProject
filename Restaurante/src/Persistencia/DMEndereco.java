@@ -1,8 +1,6 @@
 package Persistencia;
 
 import Modelo.Endereco;
-import Modelo.Funcionario;
-import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
 
 import java.sql.*;
 
@@ -13,13 +11,13 @@ public class DMEndereco extends DMGeral{
         Connection con = DMGeral.getConnection();
         String sql = "INSERT INTO endereco (rua,numero,complemento,bairro,cep,cidade,estado) values (?,?,?,?,?,?,?)";
         PreparedStatement stmt = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-        stmt.setString(1, e.logradouro);
-        stmt.setString(2, e.num);
-        stmt.setString(3, e.complemento);
-        stmt.setString(4, e.bairro);
-        stmt.setString(5, e.cep);
-        stmt.setString(6, e.cidade);
-        stmt.setString(7, e.estado);
+        stmt.setString(1, e.getLogradouro());
+        stmt.setString(2, e.getNum());
+        stmt.setString(3, e.getComplemento());
+        stmt.setString(4, e.getBairro());
+        stmt.setString(5, e.getCep());
+        stmt.setString(6, e.getCidade());
+        stmt.setString(7, e.getEstado());
 
         Integer idEndereco = 0;
 
@@ -44,14 +42,14 @@ public class DMEndereco extends DMGeral{
         Endereco end = new Endereco(0,"", "", "", "", "", "", "");
         if (r.next() == true){
 
-            end.id_endereco = r.getInt("id_endereco");
-            end.logradouro = r.getString("rua");
-            end.cep = r.getString("cep");
-            end.num = r.getString("numero");
-            end.complemento = r.getString("complemento");
-            end.bairro = r.getString("bairro");
-            end.cidade = r.getString("cidade");
-            end.estado = r.getString("estado");
+            end.setId_endereco(r.getInt("id_endereco"));
+            end.setLogradouro(r.getString("rua"));
+            end.setCep(r.getString("cep"));
+            end.setNum(r.getString("numero"));
+            end.setComplemento(r.getString("complemento"));
+            end.setBairro(r.getString("bairro"));
+            end.setCidade(r.getString("cidade"));
+            end.setEstado(r.getString("estado"));
         }
         return end;
     }

@@ -10,9 +10,9 @@ public class DMTelefone extends DMGeral {
         Connection con =  DMGeral.getConnection();
         String sql = "INSERT INTO telefone (numero,ddd,operadora) values (?,?,?)";
         PreparedStatement stmt = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-        stmt.setString(1, t.num);
-        stmt.setString(2, t.ddd);
-        stmt.setString(3, t.operadora);
+        stmt.setString(1, t.getNum());
+        stmt.setString(2, t.getDdd());
+        stmt.setString(3, t.getOperadora());
 
         Integer idTelefone = 0;
 
@@ -35,10 +35,10 @@ public class DMTelefone extends DMGeral {
         ResultSet r = stmt.executeQuery();
         Telefone tel = new Telefone(0,"","","");
         if( r.next() == true ){
-                tel .id_telefone = r.getInt("id_telefone");
-                tel.ddd = r.getString("ddd");
-                tel.num = r.getString("numero");
-                tel.operadora = r.getString("operadora");
+                tel.setId_telefone(r.getInt("id_telefone"));
+                tel.setDdd(r.getString("ddd"));
+                tel.setNum(r.getString("numero"));
+                tel.setOperadora(r.getString("operadora"));
         }
         return tel;
     }

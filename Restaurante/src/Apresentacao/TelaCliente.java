@@ -231,7 +231,7 @@ public class TelaCliente extends JFrame {
 
                     cpf = tCpf.getText();
                     nome = tNome.getText();
-                    Cliente c = new Cliente(nome, cpf, idTelefone, idEndereco);
+                    Cliente c = new Cliente(0,nome, cpf, idTelefone, idEndereco);
 
                     try {
                         new DMCliente().inserirCliente(c);

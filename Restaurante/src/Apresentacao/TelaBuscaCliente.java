@@ -1,5 +1,9 @@
 package Apresentacao;
 
+import Modelo.Cliente;
+import Modelo.Endereco;
+import Modelo.Telefone;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -8,7 +12,15 @@ public class TelaBuscaCliente extends JFrame {
     JTable table;
     JScrollPane tableScrollPane;
 
-    public TelaBuscaCliente(){
+    Cliente[] clientes;
+    Telefone[] telefones;
+    Endereco[] enderecos;
+
+    public TelaBuscaCliente(Cliente[] clientes, Telefone[] telefones, Endereco[] enderecos){
+        this.clientes = clientes;
+        this.telefones = telefones;
+        this.enderecos = enderecos;
+
         setTitle("Exemplo de JTable");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(600,460);

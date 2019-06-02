@@ -46,7 +46,7 @@ public class JanelaPrincipal extends JFrame {
 
         String nome = JOptionPane.showInputDialog("Digite o nome do cliente desejado");
         String cpf = JOptionPane.showInputDialog("Digite o cpf do cliente desejado");
-        Cliente cl = new Cliente(nome,cpf,0,0);
+        Cliente cl = new Cliente(0,nome,cpf,0,0);
         Cliente[] clientes;
         clientes =  new DMCliente().consultar(cl);
 
@@ -54,21 +54,24 @@ public class JanelaPrincipal extends JFrame {
         Endereco[] enderecos = new Endereco[clientes.length];
 
         for(int i = 0; i < clientes.length; i++) {
-            telefones[i]  = new DMTelefone().consultarTelefone(clientes[i].idTelefone);
-            enderecos[i] = new DMEndereco().consutlarEndereco(clientes[i].idEndereco);
-            System.out.println("Cliente nome " + clientes[i].nome + "\n cliente id_tel: " + clientes[i].idTelefone + "\n cliente id_end: " + clientes[i].idEndereco);
-            System.out.println("Telefone id_telefone " + telefones[i].id_telefone + "\n numero: " + telefones[i].num);
-            System.out.println("Endereço id_endereço " + enderecos[i].id_endereco + "\n rua: " + enderecos[i].num);
+            telefones[i]  = new DMTelefone().consultarTelefone(clientes[i].getIdTelefone());
+            enderecos[i] = new DMEndereco().consutlarEndereco(clientes[i].getIdEndereco());
+            System.out.println("Cliente nome " + clientes[i].getNome() + "\n cliente id_tel: " + clientes[i].getIdTelefone() + "\n cliente id_end: " + clientes[i].getIdEndereco());
+            System.out.println("Telefone id_telefone " + telefones[i].getId_telefone() + "\n numero: " + telefones[i].getNum());
+            System.out.println("Endereço id_endereço " + enderecos[i].getId_endereco() + "\n rua: " + enderecos[i].getNum());
 
         }
+
+        new TelaBuscaCliente(clientes, telefones, enderecos);
     }
 
     public void cadastrarCliente(){
         new TelaCliente();
     }
 
-    public void removerCliente(){
-        JOptionPane.showMessageDialog(null,"REMOVER");
+    public void removerCliente() throws SQLException {
+        String id = JOptionPane.showInputDialog("digite o id");
+        new DMCliente().apagarCliente(id);
     }
 
     public void editarCliente(){
