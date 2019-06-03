@@ -44,25 +44,7 @@ public class JanelaPrincipal extends JFrame {
 
     public void buscarCliente() throws SQLException {
 
-        String nome = JOptionPane.showInputDialog("Digite o nome do cliente desejado");
-        String cpf = JOptionPane.showInputDialog("Digite o cpf do cliente desejado");
-        Cliente cl = new Cliente(0,nome,cpf,0,0);
-        Cliente[] clientes;
-        clientes =  new DMCliente().consultar(cl);
-
-        Telefone[] telefones = new Telefone[clientes.length];
-        Endereco[] enderecos = new Endereco[clientes.length];
-
-        for(int i = 0; i < clientes.length; i++) {
-            telefones[i]  = new DMTelefone().consultarTelefone(clientes[i].getIdTelefone());
-            enderecos[i] = new DMEndereco().consutlarEndereco(clientes[i].getIdEndereco());
-            System.out.println("Cliente nome " + clientes[i].getNome() + "\n cliente id_tel: " + clientes[i].getIdTelefone() + "\n cliente id_end: " + clientes[i].getIdEndereco());
-            System.out.println("Telefone id_telefone " + telefones[i].getId_telefone() + "\n numero: " + telefones[i].getNum());
-            System.out.println("Endereço id_endereço " + enderecos[i].getId_endereco() + "\n rua: " + enderecos[i].getNum());
-
-        }
-
-        new TelaBuscaCliente(clientes, telefones, enderecos);
+        new BuscaCliente();
     }
 
     public void cadastrarCliente(){

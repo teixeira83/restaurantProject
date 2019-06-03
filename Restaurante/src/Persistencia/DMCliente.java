@@ -6,6 +6,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class DMCliente extends DMGeral {
@@ -25,13 +27,13 @@ public class DMCliente extends DMGeral {
         stmt.close();
     }
 
-    public Cliente[] consultar(Cliente c) throws SQLException {
+    public Cliente[] consultar(String nome) throws SQLException {
         Connection con = DMGeral.getConnection();
 
         String sql = "SELECT * FROM cliente WHERE nome like ?";
 
         PreparedStatement stmt = con.prepareStatement(sql);
-        stmt.setString(1, "%" + c.getNome() + "%");
+        stmt.setString(1, "%" + nome + "%");
         ResultSet r = stmt.executeQuery();
         Cliente[] clientes = new Cliente[getReturnLength(r)];
         ResultSet rs = stmt.executeQuery();
@@ -55,7 +57,6 @@ public class DMCliente extends DMGeral {
                 i++;
             }
         } else {
-            c = null;
             System.out.println("Cliente não encontrado no Banco de Dados.");
         }
         return clientes;
@@ -69,4 +70,37 @@ public class DMCliente extends DMGeral {
         stmt.executeUpdate();
 
     }
+
+
+
+    public List<Cliente> help() throws SQLException {
+        Connection con = DMGeral.getConnection();
+
+        String sql = "SELECT * FROM cliente";
+
+        PreparedStatement stmt = null;
+        ResultSet rs = null;
+
+        List<Cliente> clientes = new ArrayList<>();
+
+        try{
+            stmt = con.prepareStatement("SELECT * FROM cliente");
+            rs = stmt.executeQuery();
+
+            while( rs.next()){
+                Cliente cl = new Cliente(0,"","",0,0);
+                cl.setIdCliente(rs.getInt("id_cliente"));
+                cl.setNome(rs.getString("nome"));
+                cl.setCpf(rs.getString("cpf"));
+                cl.setIdTelefone(rs.getInt("id_telefone"));
+                cl.setIdEndereco(rs.getInt("id_endereco"));
+                clientes.add(cl);
+            }
+        }catch (SQLException ex) {
+            System.out.println("DEU RUIM BRO");
+        }
+        return clientes;
+    }
+
+
 }

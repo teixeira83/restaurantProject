@@ -194,73 +194,7 @@ public class TelaCliente extends JFrame {
         tOperadora.setLocation(460, 310);
         this.add(tOperadora);
 
-        class OuvinteCliente extends MouseAdapter {
-            public void mouseClicked(MouseEvent e) {
-                if (e.getSource() == bSalvar) {
 
-                    rua = tRua.getText();
-                    numero = tNumero.getText();
-                    complemento = tComplemento.getText();
-                    bairro = tBairro.getText();
-                    cep = tCep.getText();
-                    cidade = tCidade.getText();
-                    estado = tEstado.getText();
-
-                    Endereco end = new Endereco(0,rua, numero, complemento, bairro, cep, cidade, estado);
-
-                    int idEndereco = 0;
-                    try {
-                        idEndereco = new DMEndereco().incluirEndereco(end);
-                    } catch (SQLException ex) {
-                        ex.printStackTrace();
-                    }
-
-                    ddd = tDdd.getText();
-                    tel = tTel.getText();
-                    operadora = tOperadora.getText();
-
-                    Telefone telefone = new Telefone(0, ddd, tel, operadora);
-
-                    int idTelefone = 0 ;
-
-                    try {
-                        idTelefone = new DMTelefone().inserirTelefone(telefone);
-                    } catch (SQLException ex) {
-                        ex.printStackTrace();
-                    }
-
-                    cpf = tCpf.getText();
-                    nome = tNome.getText();
-                    Cliente c = new Cliente(0,nome, cpf, idTelefone, idEndereco);
-
-                    try {
-                        new DMCliente().inserirCliente(c);
-                    } catch (SQLException ex) {
-                        ex.printStackTrace();
-                    }
-
-                }
-
-                if (e.getSource() == bLimpar) {
-
-                    tCpf.setText("");
-                    tNome.setText("");
-                    tRua.setText("");
-                    tNumero.setText("");
-                    tComplemento.setText("");
-                    tBairro.setText("");
-                    tCep.setText("");
-                    tCidade.setText("");
-                    tEstado.setText("");
-                    tDdd.setText("");
-                    tNumero.setText("");
-                    tOperadora.setText("");
-                    tTel.setText("");
-
-                }
-            }
-
-        }
 
         OuvinteCliente oC = new OuvinteCliente();
 
@@ -301,6 +235,75 @@ public class TelaCliente extends JFrame {
         this.setLayout(null);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
+    }
+
+
+    class OuvinteCliente extends MouseAdapter {
+        public void mouseClicked(MouseEvent e) {
+            if (e.getSource() == bSalvar) {
+
+                rua = tRua.getText();
+                numero = tNumero.getText();
+                complemento = tComplemento.getText();
+                bairro = tBairro.getText();
+                cep = tCep.getText();
+                cidade = tCidade.getText();
+                estado = tEstado.getText();
+
+                Endereco end = new Endereco(0,rua, numero, complemento, bairro, cep, cidade, estado);
+
+                int idEndereco = 0;
+                try {
+                    idEndereco = new DMEndereco().incluirEndereco(end);
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
+
+                ddd = tDdd.getText();
+                tel = tTel.getText();
+                operadora = tOperadora.getText();
+
+                Telefone telefone = new Telefone(0, ddd, tel, operadora);
+
+                int idTelefone = 0 ;
+
+                try {
+                    idTelefone = new DMTelefone().inserirTelefone(telefone);
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
+
+                cpf = tCpf.getText();
+                nome = tNome.getText();
+                Cliente c = new Cliente(0,nome, cpf, idTelefone, idEndereco);
+
+                try {
+                    new DMCliente().inserirCliente(c);
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
+
+            }
+
+            if (e.getSource() == bLimpar) {
+
+                tCpf.setText("");
+                tNome.setText("");
+                tRua.setText("");
+                tNumero.setText("");
+                tComplemento.setText("");
+                tBairro.setText("");
+                tCep.setText("");
+                tCidade.setText("");
+                tEstado.setText("");
+                tDdd.setText("");
+                tNumero.setText("");
+                tOperadora.setText("");
+                tTel.setText("");
+
+            }
+        }
+
     }
 
 }

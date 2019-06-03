@@ -4,23 +4,15 @@
     <list default="true" id="e4b80f6e-b26d-4869-8b44-2535190996bb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Restaurante/Apresentacao/JanelaPrincipal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurante/Apresentacao/JanelaPrincipal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Restaurante/Apresentacao/Restaurante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurante/Apresentacao/Restaurante.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Restaurante/Apresentacao/TelaBuscaCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurante/Apresentacao/TelaBuscaCliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurante/Apresentacao/TelaCliente$1OuvinteCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurante/Apresentacao/TelaCliente$1OuvinteCliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurante/Modelo/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurante/Modelo/Cliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurante/Modelo/Endereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurante/Modelo/Endereco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurante/Modelo/Telefone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurante/Modelo/Telefone.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurante/Persistencia/DMCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurante/Persistencia/DMCliente.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Restaurante/Persistencia/DMEndereco.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurante/Persistencia/DMEndereco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Restaurante/Persistencia/DMTelefone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Restaurante/Persistencia/DMTelefone.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Apresentacao/JanelaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apresentacao/JanelaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Apresentacao/Restaurante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apresentacao/Restaurante.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Apresentacao/TelaBuscaCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apresentacao/TelaBuscaCliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Apresentacao/TelaCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apresentacao/TelaCliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modelo/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modelo/Endereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Endereco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modelo/Telefone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modelo/Telefone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Persistencia/DMCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/DMCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Persistencia/DMEndereco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/DMEndereco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Persistencia/DMTelefone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/DMTelefone.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,90 +29,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Apresentacao/JanelaPrincipal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="60" column="85" selection-start-line="60" selection-start-column="85" selection-end-line="60" selection-end-column="85" />
+            <state relative-caret-position="173">
+              <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Modelo/Endereco.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#1190#1191#0" expanded="true" />
-                <element signature="e#1224#1225#0" expanded="true" />
-                <element signature="e#180#181#0" expanded="true" />
-                <element signature="e#213#214#0" expanded="true" />
-                <element signature="e#265#266#0" expanded="true" />
-                <element signature="e#309#310#0" expanded="true" />
-                <element signature="e#339#340#0" expanded="true" />
-                <element signature="e#365#366#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-                <element signature="e#433#434#0" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#505#506#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#638#639#0" expanded="true" />
-                <element signature="e#667#668#0" expanded="true" />
-                <element signature="e#711#712#0" expanded="true" />
-                <element signature="e#747#748#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
-                <element signature="e#841#842#0" expanded="true" />
-                <element signature="e#871#872#0" expanded="true" />
-                <element signature="e#904#905#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
-                <element signature="e#977#978#0" expanded="true" />
-                <element signature="e#1013#1014#0" expanded="true" />
-                <element signature="e#1046#1047#0" expanded="true" />
-                <element signature="e#1075#1076#0" expanded="true" />
-                <element signature="e#1119#1120#0" expanded="true" />
-                <element signature="e#1155#1156#0" expanded="true" />
-                <element signature="e#1275#1276#0" expanded="true" />
-                <element signature="e#1321#1322#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Modelo/Telefone.java">
+        <entry file="file://$PROJECT_DIR$/src/Apresentacao/Restaurante.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="15" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-              <folding>
-                <element signature="e#139#140#0" expanded="true" />
-                <element signature="e#165#166#0" expanded="true" />
-                <element signature="e#203#204#0" expanded="true" />
-                <element signature="e#233#234#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
-                <element signature="e#289#290#0" expanded="true" />
-                <element signature="e#327#328#0" expanded="true" />
-                <element signature="e#357#358#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#517#518#0" expanded="true" />
-                <element signature="e#552#553#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-                <element signature="e#637#638#0" expanded="true" />
-                <element signature="e#683#684#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Persistencia/DMTelefone.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -128,41 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Apresentacao/TelaBuscaCliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Apresentacao/TelaCliente.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="236" column="24" selection-start-line="236" selection-start-column="24" selection-end-line="236" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Modelo/UsuarioDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Persistencia/DMCliente.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="132" column="47" lean-forward="true" selection-start-line="132" selection-start-column="47" selection-end-line="132" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,38 +59,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Modelo/Cliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="615">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
               <folding>
-                <element signature="e#204#205#0" expanded="true" />
-                <element signature="e#186#187#0" expanded="true" />
-                <element signature="e#228#229#0" expanded="true" />
-                <element signature="e#441#442#0" expanded="true" />
-                <element signature="e#468#469#0" expanded="true" />
-                <element signature="e#508#509#0" expanded="true" />
-                <element signature="e#540#541#0" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
-                <element signature="e#596#597#0" expanded="true" />
-                <element signature="e#634#635#0" expanded="true" />
-                <element signature="e#664#665#0" expanded="true" />
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#780#781#0" expanded="true" />
-                <element signature="e#824#825#0" expanded="true" />
-                <element signature="e#858#859#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
-                <element signature="e#940#941#0" expanded="true" />
-                <element signature="e#984#985#0" expanded="true" />
+                <element signature="e#434#435#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#559#560#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Persistencia/DMEndereco.java">
+        <entry file="file://$PROJECT_DIR$/src/Apresentacao/BuscaCliente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="245">
+              <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Persistencia/DMCliente.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1115">
+              <caret line="101" selection-start-line="101" selection-end-line="101" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -231,11 +117,20 @@
       <find>limpar</find>
       <find>obj</find>
       <find>DMLo</find>
+      <find>altura</find>
+      <find>ViewJTable</find>
+      <find>resultado</find>
+      <find>model</find>
+      <find>modelo</find>
+      <find>tabela</find>
     </findStrings>
     <replaceStrings>
       <replace>stmt</replace>
       <replace>e</replace>
       <replace>width</replace>
+      <replace>y</replace>
+      <replace>BuscaCliente</replace>
+      <replace>rs</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -252,26 +147,34 @@
         <option value="$PROJECT_DIR$/src/Persistencia/DMEndereço.java" />
         <option value="$PROJECT_DIR$/src/Persistencia/DMEndereo.java" />
         <option value="$PROJECT_DIR$/src/Persistencia/DMLogin.java" />
-        <option value="$PROJECT_DIR$/src/Apresentacao/Restaurante.java" />
         <option value="$PROJECT_DIR$/src/Persistencia/DMGeral.java" />
         <option value="$PROJECT_DIR$/src/Modelo/UsuarioDTO.java" />
         <option value="$PROJECT_DIR$/src/Modelo/UsuarioDto.java" />
-        <option value="$PROJECT_DIR$/src/Apresentacao/TelaBuscaCliente.java" />
-        <option value="$PROJECT_DIR$/src/Apresentacao/TelaCliente.java" />
-        <option value="$PROJECT_DIR$/src/Persistencia/DMCliente.java" />
-        <option value="$PROJECT_DIR$/src/Modelo/Cliente.java" />
         <option value="$PROJECT_DIR$/src/Modelo/Telefone.java" />
-        <option value="$PROJECT_DIR$/src/Apresentacao/JanelaPrincipal.java" />
         <option value="$PROJECT_DIR$/src/Modelo/Endereco.java" />
         <option value="$PROJECT_DIR$/src/Persistencia/DMTelefone.java" />
         <option value="$PROJECT_DIR$/src/Persistencia/DMEndereco.java" />
+        <option value="$PROJECT_DIR$/src/Apresentacao/TelaCliente.java" />
+        <option value="$PROJECT_DIR$/src/Apresentacao/TelaBuscaCliente.java" />
+        <option value="$PROJECT_DIR$/src/Modelo/Cliente.java" />
+        <option value="$PROJECT_DIR$/src/Persistencia/DMCliente.java" />
+        <option value="$PROJECT_DIR$/src/Apresentacao/Restaurante.java" />
+        <option value="$PROJECT_DIR$/src/Apresentacao/JanelaPrincipal.java" />
+        <option value="$PROJECT_DIR$/src/Apresentacao/BuscaCliente.java" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1360" />
-    <option name="width" value="1600" />
-    <option name="height" value="872" />
+    <option name="x" value="1473" />
+    <option name="y" value="75" />
+    <option name="width" value="1487" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -281,7 +184,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -316,7 +219,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -380,12 +283,21 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="1360" y="0" width="1600" height="872" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26962677" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49649122" visible="true" weight="0.27348778" />
+      <window_info id="Structure" order="1" sideWeight="0.50350875" side_tool="true" weight="0.27348778" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -393,11 +305,11 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32885906" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23489933" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36241612" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29798657" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.24966443" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32885906" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -406,7 +318,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24967825" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32947233" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
@@ -516,30 +428,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Apresentacao/Restaurante.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modelo/UsuarioDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Apresentacao/TelaBuscaCliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modelo/UsuarioDTO.java" />
     <entry file="file://$PROJECT_DIR$/src/Modelo/UsuarioDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -547,51 +436,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Apresentacao/TelaCliente.java">
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Endereco.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="236" column="24" selection-start-line="236" selection-start-column="24" selection-end-line="236" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Persistencia/DMCliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="55" column="13" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modelo/Cliente.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding>
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#186#187#0" expanded="true" />
-            <element signature="e#228#229#0" expanded="true" />
-            <element signature="e#441#442#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#540#541#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#596#597#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#780#781#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#940#941#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="15">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -620,57 +468,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Apresentacao/JanelaPrincipal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="60" column="85" selection-start-line="60" selection-start-column="85" selection-end-line="60" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modelo/Endereco.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#1190#1191#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-            <element signature="e#180#181#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#365#366#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#505#506#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#638#639#0" expanded="true" />
-            <element signature="e#667#668#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#977#978#0" expanded="true" />
-            <element signature="e#1013#1014#0" expanded="true" />
-            <element signature="e#1046#1047#0" expanded="true" />
-            <element signature="e#1075#1076#0" expanded="true" />
-            <element signature="e#1119#1120#0" expanded="true" />
-            <element signature="e#1155#1156#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1321#1322#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Persistencia/DMTelefone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="340">
           <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -680,8 +480,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Persistencia/DMEndereco.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="165">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Apresentacao/TelaCliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="230" selection-start-line="230" selection-end-line="236" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modelo/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#517#518#0" expanded="true" />
+            <element signature="e#559#560#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Persistencia/DMCliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1115">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Apresentacao/Restaurante.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Apresentacao/TelaBuscaCliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="132" column="47" lean-forward="true" selection-start-line="132" selection-start-column="47" selection-end-line="132" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Apresentacao/JanelaPrincipal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="46" column="12" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Apresentacao/BuscaCliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="85" column="29" selection-start-line="85" selection-start-column="29" selection-end-line="85" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
