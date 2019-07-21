@@ -12,16 +12,25 @@
 
 ### 🏠 [Homepage](https://github.com/teixeira83/challenge-backend)
 
-## Prerequisites #to run the project
+## Prerequisites
 
 - JAVA >=8
 - Spring >= <a href="https://spring.io/tools">Spring Tools 4</a>
+- Maven >= <a href="https://maven.apache.org/install.html">3.6.0</a>
 
 
-## Install
+## Run the Project
 
-All you need is an IDE ( <a href="https://www.jetbrains.com/idea/" >I used IntelliJ Ultimate Edition </a> ) with de Spring Tools for run the project as Spring Boot App.
+In the project root folder:
 
+```sh
+mvn spring-boot:run
+```
+
+```sh
+GET http://localhost:8080/challenge-backend/item?begindate=10-10-2016&finaldate=13-10-2016
+```
+- The filter is based on two parameters: begindate and finaldate.
 
 ## Author
 
