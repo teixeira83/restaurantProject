@@ -2,7 +2,7 @@
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/java-%3E%3D8-red.svg" />
-  <img src="https://img.shields.io/badge/spring--boot-2.1.6-green.svg" />
+  <img src="https://img.shields.io/badge/spring--boot-%3E=2.1.6-green.svg" />
   <a href="https://twitter.com/teixeira_83">
     <img alt="Twitter: teixeira_83" src="https://img.shields.io/twitter/follow/teixeira_83.svg?style=social" target="_blank" />
   </a>
@@ -12,22 +12,16 @@
 
 ### 🏠 [Homepage](https://github.com/teixeira83/challenge-backend)
 
-## Prerequisites
+## Prerequisites #to run the project
 
-- npm >=5.5.0
-- node >=9.3.0
+- JAVA >=8
+- Spring >= <a href="https://spring.io/tools">Spring Tools 4</a>
+
 
 ## Install
 
-```sh
-npm install
-```
+All you need is an IDE ( <a href="https://www.jetbrains.com/idea/" >I used IntelliJ Ultimate Edition </a> ) with de Spring Tools for run the project as Spring Boot App.
 
-## Run tests
-
-```sh
-npm run test
-```
 
 ## Author
 
