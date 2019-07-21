@@ -40,18 +40,6 @@ GET http://localhost:8080/challenge-backend/item?begindate=10-10-2016&finaldate=
 * Twitter: [@teixeira_83](https://twitter.com/teixeira_83)
 * Github: [@teixeira83](https://github.com/teixeira83)
 
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/kefranabg/readme-md-generator/issues).
-
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
-## 📝 License
-
-Copyright © 2019 [Rafael Teixeira](https://github.com/teixeira83).<br />
-This project is [MIT](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE) licensed.
-
-***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
