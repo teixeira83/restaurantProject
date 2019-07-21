@@ -3,6 +3,7 @@
   <img alt="Version" src="https://img.shields.io/badge/version-1-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/java-%3E%3D8-red.svg" />
   <img src="https://img.shields.io/badge/spring--boot-%3E=2.1.6-green.svg" />
+  <img src="https://img.shields.io/badge/maven-%3E%3D3.6.0-orange.svg" />
   <a href="https://twitter.com/teixeira_83">
     <img alt="Twitter: teixeira_83" src="https://img.shields.io/twitter/follow/teixeira_83.svg?style=social" target="_blank" />
   </a>
