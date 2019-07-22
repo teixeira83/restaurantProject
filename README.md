@@ -1,45 +1,58 @@
-<h1 align="center">Welcome to B2W - Backend Challenge BIT - SP 👋</h1>
+<h1 align="center">Welcome to Pptx-Maker 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1-blue.svg?cacheSeconds=2592000" />
-  <img src="https://img.shields.io/badge/java-%3E%3D8-red.svg" />
-  <img src="https://img.shields.io/badge/spring--boot-%3E=2.1.6-green.svg" />
-  <img src="https://img.shields.io/badge/maven-%3E%3D3.6.0-orange.svg" />
-  <a href="https://twitter.com/teixeira_83">
-    <img alt="Twitter: teixeira_83" src="https://img.shields.io/twitter/follow/teixeira_83.svg?style=social" target="_blank" />
+  <img src="https://img.shields.io/badge/npm-%3E%3D5.5.0-blue.svg" />
+  <img src="https://img.shields.io/badge/node-%3E%3D9.3.0-blue.svg" />
+  <a href="https://github.com/kefranabg/readme-md-generator#readme">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
+  </a>
+  <a href="https://github.com/kefranabg/readme-md-generator/graphs/commit-activity">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" target="_blank" />
+  </a>
+  <a href="https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
   </a>
 </p>
 
-> This project is a backend challenge from b2w group. 
+> A Program to make pptx
 
-### 🏠 [Homepage](https://github.com/teixeira83/challenge-backend)
+### 🏠 [Homepage](www.google.com)
 
 ## Prerequisites
 
-- JAVA >=8
-- Spring >= <a href="https://spring.io/tools">Spring Tools 4</a>
-- Maven >= <a href="https://maven.apache.org/install.html">3.6.0</a>
+- npm >=5.5.0
+- node >=9.3.0
 
-
-## Run the Project
-
-In the project root folder:
+## Install
 
 ```sh
-mvn spring-boot:run
+npm install
 ```
 
+## Run tests
+
 ```sh
-GET http://localhost:8080/challenge-backend/item?begindate=10-10-2016&finaldate=13-10-2016
+npm run test
 ```
-- The filter is based on two parameters: begindate and finaldate.
 
 ## Author
 
-👤 **Rafael Teixeira**
+👤 **Leonardo Fernandes**
 
-* Twitter: [@teixeira_83](https://twitter.com/teixeira_83)
-* Github: [@teixeira83](https://github.com/teixeira83)
+* Github: [@leofc97](https://github.com/leofc97)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/kefranabg/readme-md-generator/issues).
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+Copyright © 2019 [Leonardo Fernandes](https://github.com/leofc97).<br />
+This project is [MIT](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE) licensed.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
